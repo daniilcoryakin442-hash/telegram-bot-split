@@ -7,7 +7,7 @@ import sqlite3  # Для базы данных подписок
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 if not BOT_TOKEN:
     raise ValueError("BOT_TOKEN не установлен!")
-bot = telebot.TeleBot(BOT_TOKEN)
+bot = telebot.TeleBot(8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM)
 
 # Инициализация Flask
 app = Flask(__name__)
