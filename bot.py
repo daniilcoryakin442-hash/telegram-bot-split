@@ -4,8 +4,7 @@ import os
 from flask import Flask, request
 
 # Токен: рекомендуется использовать переменную окружения для безопасности
-TOKEN = os.environ.get('8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM')
-# Если не хотите переменную окружения, раскомментируйте ниже (но не для продакшена):
+TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN') or '8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM'  # Вставьте ваш токен в кавычках# Если не хотите переменную окружения, раскомментируйте ниже (но не для продакшена):
 # TOKEN = '8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM'
 
 if not TOKEN:
