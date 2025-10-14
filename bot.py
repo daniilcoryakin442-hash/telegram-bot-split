@@ -4,11 +4,11 @@ import os
 from flask import Flask, request
 
 # Токен из переменной окружения (в Render: Environment > Secret files или variables)
-TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
+TOKEN = os.environ.get('8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM')
 if not TOKEN:
-    raise ValueError("TELEGRAM_BOT_TOKEN не задан в переменных окружения")
+    raise ValueError("8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM")
 
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM)
 app = Flask(__name__)
 
 @bot.message_handler(commands=['start'])
