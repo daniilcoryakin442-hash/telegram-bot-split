@@ -3,14 +3,15 @@ from telebot import types
 import os
 from flask import Flask, request
 
-# Токен (замените на ваш, если не используете переменные окружения)
-# Для безопасности: используйте переменную окружения в Render
-TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN') or '8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM'  
-TOKEN = '8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM'  # Если хотите оставить текущий
+# Токен: рекомендуется использовать переменную окружения для безопасности
+TOKEN = os.environ.get('8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM')
+# Если не хотите переменную окружения, раскомментируйте ниже (но не для продакшена):
+# TOKEN = '8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM'
 
+if not TOKEN:
+    raise ValueError("TELEGRAM_BOT_TOKEN не задан")
 
-
-bot = telebot.TeleBot(8267466919:AAFAZ2vCmLwrkFulBPgRauRq3dkpB0FchGM)
+bot = telebot.TeleBot(TOKEN)  # Используем переменную TOKEN (без кавычек внутри)
 app = Flask(__name__)
 
 @bot.message_handler(commands=['start'])
@@ -54,7 +55,7 @@ def get_message():
 @app.route('/')
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://telegram-bot-split.onrender.com' + TOKEN)  # Замените на ваш URL из Render
+    bot.set_webhook(url='https://telegram-bot-split.onrender.com/' + TOKEN)  # Добавлен слэш перед TOKEN
     return 'Webhook set!', 200
 
 if __name__ == '__main__':
