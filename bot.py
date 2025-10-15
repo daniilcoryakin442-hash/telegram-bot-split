@@ -25,9 +25,8 @@ def show_subscriptions(message):
         {"name": "Basic 12", "url": "https://pay.ya.ru/t/HEJkrP"},
         {"name": "Basic 10", "url": "https://pay.ya.ru/t/cxpkRc"},
         {"name": "Basic 6", "url": "https://pay.ya.ru/t/rywVP2"},
-        {"name": "Basic 4", "url": "https://pay.ya.ru/t/aFM0Le"},
-        {"name": "Basic 3", "url": "https://pay.ya.ru/t/VS40Pc"},
-        {"name": "Basic 1", "url": "https://pay.ya.ru/t/MjrJ0V"}
+        {"name": "Basic 4", "url": "https://pay.ya.ru/t/aFM0Le"}
+       
     ]
     
     for sub in subscriptions:
