@@ -25,8 +25,10 @@ def show_subscriptions(message):
         {"name": "Basic 12", "url": "https://pay.ya.ru/t/HEJkrP"},
         {"name": "Basic 10", "url": "https://pay.ya.ru/t/cxpkRc"},
         {"name": "Basic 6", "url": "https://pay.ya.ru/t/rywVP2"},
-        {"name": "Basic 4", "url": "https://pay.ya.ru/t/aFM0Le"}
-       
+        {"name": "Basic 4", "url": "https://pay.ya.ru/t/aFM0Le"},
+        {"name": "Блок тренировок к Тренеру", "url": "https://pay.ya.ru/t/h0xbkS"},
+        {"name": "Блок тренировок СПЛИТ(2 Человека) у Тренера", "url": "https://pay.ya.ru/t/xlkYbD"}
+        
     ]
     
     for sub in subscriptions:
