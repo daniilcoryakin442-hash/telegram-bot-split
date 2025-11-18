@@ -21,11 +21,10 @@ def start_message(message):
 def show_subscriptions(message):
     keyboard = types.InlineKeyboardMarkup()
     subscriptions = [
-        {"name": "Basic 14", "url": "https://pay.ya.ru/t/pNllgv"},
-        {"name": "Basic 12", "url": "https://pay.ya.ru/t/yLHvtX"},
-        {"name": "Basic 7 (при покупке 2 абонементов)", "url": "https://pay.ya.ru/t/YM2ZDo"},
-        {"name": "Basic 8", "url": "https://pay.ya.ru/t/stZWkR"},
-        {"name": "Basic 6", "url": "https://pay.ya.ru/t/vAzrkr"},
+        {"name": "Basic 12 + 2025 год в подарок", "url": "https://pay.ya.ru/t/dy0Mlh"},
+        {"name": "Basic 8", "url": "https://pay.ya.ru/t/DeVSLf"},
+        {"name": "Basic 6 ", "url": "https://pay.ya.ru/t/iNlmxz"},
+        {"name": "Basic 3 (при покупке 2-х абонементов)", "url": "https://pay.ya.ru/t/7twQcg"},
         {"name": "Блок тренировок к Тренеру", "url": "https://pay.ya.ru/t/h0xbkS"},
         {"name": "Блок тренировок СПЛИТ(2 Человека) у Тренера", "url": "https://pay.ya.ru/t/xlkYbD"}
         
