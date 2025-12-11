@@ -22,7 +22,7 @@ def show_subscriptions(message):
     keyboard = types.InlineKeyboardMarkup()
     subscriptions = [
         {"name": "Basic 12 + вторая карта на 2 месяца в подарок", "url": "https://pay.ya.ru/t/y7QQUv"},
-        {"name": "Basic 8", "url": "https://pay.ya.ru/t/DeVSLf"},
+        {"name": "Basic 9 + 30 дней заморозки", "url": "https://pay.ya.ru/t/hR7awO"},
         {"name": "Basic 6 + вторая карта на 1 месяц в подарок", "url": "https://pay.ya.ru/t/iNlmxz"},
         {"name": "Basic 3", "url": "https://pay.ya.ru/t/ozrRUz"},
         {"name": "Блок тренировок к Тренеру", "url": "https://pay.ya.ru/t/h0xbkS"},
